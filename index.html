@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Master</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+
+  <header class="bg-blue-600 text-white py-6 shadow-md">
+    <div class="container mx-auto px-6">
+      <h1 class="text-3xl font-bold">Employee List</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+
+    <div class="flex justify-start gap-x-4 items-center mb-4">
+      <a href="add.html" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+        Add New Employee
+      </a>
+      <button id="printButton" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600">
+        Print Employee List
+      </button>
+    </div>
+
+    <div class="overflow-x-auto bg-white rounded shadow">
+      <table class="min-w-full text-sm text-left" id="employeeTable">
+        <thead class="bg-gray-200 uppercase text-xs text-gray-600">
+          <tr>
+            <th class="py-3 w-40">Employee Code</th>
+            <th class="py-3 w-40">Last Name</th>
+            <th class="py-3 w-40">First Name</th>
+            <th class="py-3 w-40">Birthday</th>
+            <th class="py-3">Sex</th>
+            <th class="py-3">Address</th>
+            <th class="py-3 w-40">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTableBody" class="divide-y divide-gray-100"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
